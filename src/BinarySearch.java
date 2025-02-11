@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = new int[] {1,4,8,12,34,50};
+        int[] sortedArray = Arrays.stream(arr).sorted().toArray();
         System.out.println(binarySearch(2, arr, 0, arr.length));
         System.out.println(binarySearch(50, arr, 0, arr.length));
     }
