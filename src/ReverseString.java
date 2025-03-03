@@ -6,7 +6,7 @@ public class ReverseString {
         System.out.println(reverseString("Jessica"));
     }
 
-    public static String reverseString(@NotNull String input) {
+    public static String reverseString(String input) {
         StringBuilder output = new StringBuilder();
         char[] inputChars = input.toCharArray();
         for (int i = inputChars.length - 1; i > -1; i--) {

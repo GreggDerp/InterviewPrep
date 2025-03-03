@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 public class FindSubstrings {
 
     public static void main(String[] args) {

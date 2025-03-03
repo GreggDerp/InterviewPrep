@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public class LongestPalindrome {
+public class LongestPalindromeAgain {
     public static void main(String[] args) {
         findLongestPalindrome("madamracecar");
         findLongestPalindrome("gage");
@@ -19,15 +17,16 @@ public class LongestPalindrome {
         System.out.println(longest);
     }
 
-    public static boolean isPalindrome(String str) {
-        if (str.length() == 1) {
+    public static boolean isPalindrome(String input) {
+        if (input == null || input.length() == 1) {
             return true;
         }
+
         int left = 0;
-        int right = str.length() - 1;
+        int right = input.length() - 1;
 
         while (left < right) {
-            if (str.charAt(left) != str.charAt(right)) {
+            if (input.charAt(left) != input.charAt(right) ) {
                 return false;
             }
             left++;
